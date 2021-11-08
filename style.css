@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0
+
+}
+.text-right {
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.clear::after{
+    contain: " ";
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.mid-contain{
+    max-width: 1250px;
+    margin: auto;
+   
+}
+/*beginn css*/
+h1,h2,h3,a,p,h4,h5,h6,span,body{
+    font-family: 'Work Sans', 'sans-serif';
+}
+.main-header{
+    background-color: #fff;
+	border-bottom: 1px solid #ddd;
+	padding: 6px 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 99;
+	width: 100%;
+}
+.header-logo{ 
+    width: 22%;
+}
+.header-meanu{
+    width: 70%;
+    text-align: center;
+    text-decoration: none;
+}
+.primary-manu{}
+.primary-manu ul {
+   
+}
+.primary-manu ul li{
+    display: inline-block;
+   /* float: none;
+    margin-top: 27px;*/
+    font-weight: 500;
+    padding: 19px ;
+}
+.primary-manu ul li a{
+    display: block;
+    color: black;
+}
+.primary-manu ul li a:hover{}
+.header-button{
+    width: 8%;
+    border: 2px solid rgb(3, 39, 238);
+    border-radius: 10%;
+}
+.header-button a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(5, 7, 172);
+    float: none;
+    padding: 10px 3px;
+    font-weight: 500;
+    font-size: 17px;
+    transform: scaleY(1) ;
+}
+/*dropdown meanu*/
+.primary-manu ul li{
+    position: relative;
+}
+.primary-manu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 150px;
+    background-color: #f9f9f9;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.primary-manu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+/*benner section*/
+.banner-section{
+    background: url(img/Campus+Bus\(1200x450\).jpg ) no-repeat center center;
+    background-size: cover;
+    padding: 200px 0;
+    color: #070707;
+    z-index: 9;
+    margin-top: 50px;
+}
+
+.banner-section::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .4);
+    z-index: -1;
+}
+
+.banner-contain h1{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+
+.banner-contain{}
+.banner-contain h3{
+    font-size: 25px;
+
+}
+.banner-contain h4{
+    font-size: 45px;
+    margin: 33px 0;
+}
+
+
+.default-btn{
+    color: #95a5a6;
+    padding: 12px 13px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+    margin: 0 10px;
+    background-color: rgb(40, 40, 128);
+}
+.default-btn:hover{
+    color: white;
+}
+
+.banner-bottom{
+    margin-top: 80px;
+}
+.video-left{
+    width: 50%;
+}
+.video-left img{
+    width: 350px;
+    height: auto;
+}
+.contain-right{
+    width: 50%;
+
+}
+.banner-bottom h3{
+    color: #000;
+    font-weight: 500;
+    font-size: 2em;
+    margin-top: 45px;
+    margin-left: -180px;
+    font-family: Lobster Two;
+}
+.banner-bottom p{
+    color: rgb(109, 108, 108);
+    font-size: 1.5em;
+    margin-left: -180px;
+    font-family: Noto Sans JP;
+}
+
+/*service section*/
+.service-part{
+    background: rgb(255, 255, 255);
+    padding: 100px 0;
+    margin-bottom: 50px ;
+}
+.service-tittle h1{
+    font-weight: 700;
+    font-size: 45px;
+}
+.service-tittle p{
+    font-size: 15px;
+    color: #95a5a6;
+}
+.service-item{}
+.service-box{
+    width: 30%;
+    box-shadow: 6px 14px 30px gray;
+    margin-right: 2%;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+.service-icon{
+    width: 50px;
+    float: left;
+    min-height: 130px;
+    color: rgb(0, 0, 255);
+    font-size: 30px;
+    margin-right: 15px;
+}
+.service-content{
+    margin-top: 5px;
+}
+.service-content h4{
+
+
+}
+.service-content p {
+    margin-top: 20px;
+    color: rgb(22, 21, 22);
+}
+/*pricing table*/
+.pricing-table{
+   text-align: center;
+   width: 1250px;
+   display: block;
+   margin: auto;
+}
+a{
+    text-decoration: none;;
+}
+.width{
+    width: 20%;
+}
+.flex{
+    display: flex;
+}
+.abimg img{
+    max-width: 200%;
+    margin-right: 85px;
+    padding: 0px 30px;
+}
+.abp{
+    text-align: justify;
+    margin-left: 140px;
+    margin-right: 450px;
+    padding: -5px 0px;
+}
+.aboutt{
+    align-items: center;
+}
+section{
+    margin-top: 100px;
+}
